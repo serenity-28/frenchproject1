@@ -71,25 +71,27 @@
       opacity: 1;
     }
 .scrolling-banner {
-  overflow: hidden;
   white-space: nowrap;
-  background: #2641CA;
-  height: 150px;
+  overflow: hidden;
   position: relative;
+  height: 150px;
+}
+
+.scrolling-banner .inner {
+  display: inline-block;
+  animation: scroll-horizontal 20s linear infinite;
 }
 
 .scrolling-banner img {
-  display: inline-block;
   height: 150px;
-  animation: scroll-horizontal 40s linear infinite;
+  display: inline-block;
 }
-
 @keyframes scroll-horizontal {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
   </style>
 </head>
@@ -113,7 +115,8 @@
   </div>
 
  <div class="scrolling-banner">
-  <img src="hoooooha.png" alt="Travel Banner" />
+  <img src="hoooooha.png" alt="Travel Banner"/>
+   <img src="hoooooha.png" alt="Travel Banner"/>
 </div>
 
   <nav>
