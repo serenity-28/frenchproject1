@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>French Language Guide for Travel</title>
   <style>
     body {
@@ -39,28 +39,55 @@
       margin: 20px;
       padding: 20px;
       border-radius: 10px;
-      font-color: #10294b;
     }
     h2 {
       color: navy;
     }
     img.header-image {
       width: 100%;
-      max-height: 300px;
+      height: 150px;
       object-fit: cover;
+      display: block;
+    }
+    .language-menu {
+      background-color: #2641CA;
+      color: white;
+      text-align: right;
+      padding: 8px 20px;
+      font-size: 14px;
+    }
+    .language-menu span {
+      margin-left: 15px;
+      cursor: not-allowed;
+      opacity: 0.7;
+    }
+    .language-menu span.active {
+      font-weight: bold;
+      text-decoration: underline;
+      cursor: default;
+      opacity: 1;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>French Travel Language Guide</h1>
+    <h1>French Language Guide for Travel</h1>
   </header>
-  <img class="header-image" src="https://www.fluentu.com/blog/wp-content/uploads/site//3/francophone-countries-e1669460646256.jpg" alt="Travel" /> 
+
+  <div class="language-menu">
+    <span class="active">🇫🇷 Français</span>
+    <span>🇪🇸 Español</span>
+    <span>🇩🇪 Deutsch</span>
+    <span>🇮🇹 Italiano</span>
+    <span>🇨🇳 中文</span>
+  </div>
+
+  <img class="header-image" src="https://www.fluentu.com/blog/wp-content/uploads/site//3/francophone-countries-e1669460646256.jpg" alt="Travel Banner"/>
 
   <nav>
-    <a href="#greetings">Greetings/Formalities</a>
-    <a href="#places">Places</a>
-    <a href="#phrases">Helpful Phrases</a>
+    <a href="#greetings">Greetings/Formalities |</a>
+    <a href="#places">Places |</a>
+    <a href="#phrases">Helpful Phrases |</a>
   </nav>
 
   <section id="greetings">
