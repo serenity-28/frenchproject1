@@ -77,11 +77,10 @@
   height: 150px;
   position: relative;
 }
-
-.scrolling-banner img {
   display: inline-block;
   height: 150px;
-  animation: scroll-horizontal 50s linear infinite;
+  width: 700%; 
+  animation: scroll-horizontal 60s linear infinite; 
 }
 @keyframes scroll-horizontal {
   0% {
@@ -90,7 +89,9 @@
   100% {
     transform: translateX(-100%);
   }
-
+  .scrolling-banner img:hover {
+  animation-play-state: paused;
+  }
   </style>
 </head>
 <body>
