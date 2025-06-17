@@ -69,35 +69,28 @@
       text-decoration: underline;
       cursor: default;
       opacity: 1;
-    }
-    .scrolling-banner {
-      width: 100%;
-      overflow: hidden;
-      position: relative;
-      height: 150px;
-      background: white;
-    }
+   .scrolling-banner {
+  overflow: hidden;
+  white-space: nowrap;
+  background: #2641CA;
+  height: 150px;
+  position: relative;
+}
 
-    .scrolling-banner .inner {
-      display: flex;
-      width: max-content;
-      animation: scroll-horizontal 20s linear infinite;
-    }
+.scrolling-banner img {
+  display: inline-block;
+  height: 150px;
+  animation: scroll-horizontal 15s linear infinite;
+}
 
-    .scrolling-banner img {
-      height: 150px;
-      width: auto;
-      flex-shrink: 0;
-    }
-
-    @keyframes scroll-horizontal {
-      0% {
-        transform: translateX(0%);
-      }
-      100% {
-        transform: translateX(-50%);
-      }
-    }
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
   </style>
 </head>
 <body>
