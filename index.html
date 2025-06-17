@@ -70,30 +70,34 @@
       cursor: default;
       opacity: 1;
     }
-.scrolling-banner {
-  white-space: nowrap;
-  overflow: hidden;
-  position: relative;
-  height: 150px;
-}
+    .scrolling-banner {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      height: 150px;
+      background: white;
+    }
 
-.scrolling-banner .inner {
-  display: inline-block;
-  animation: scroll-horizontal 20s linear infinite;
-}
+    .scrolling-banner .inner {
+      display: flex;
+      width: max-content;
+      animation: scroll-horizontal 20s linear infinite;
+    }
 
-.scrolling-banner img {
-  height: 150px;
-  display: inline-block;
-}
-@keyframes scroll-horizontal {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
+    .scrolling-banner img {
+      height: 150px;
+      width: auto;
+      flex-shrink: 0;
+    }
+
+    @keyframes scroll-horizontal {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
   </style>
 </head>
 <body>
@@ -117,7 +121,7 @@
 
  <div class="scrolling-banner">
   <img src="hoooooha.png" alt="Travel Banner"/>
-   <img src="hoooooha.png" alt="Travel Banner"/>
+  <img src="hoooooha.png" alt="Travel Banner"/>
 </div>
 
   <nav>
@@ -170,6 +174,19 @@
       <li>A ticket, please: <strong>Un billet, s’il vous plaît </strong></li>
       <li>Can you show me the way?: <strong>Pouvez-vous m’indiquer le chemin?</strong></li>
       <li>Sorry, I do not speak French: <strong>Désolé(e), je ne parle pas français </strong></li>
+    </ul>
+  </section>
+
+  <section id="directions">
+    <h2>Directions</h2>
+    <ul>
+      <li>Here: <strong>Ici</strong></li>
+      <li>There: <strong>Là</strong></li>
+      <li>On the right: <strong>À droite</strong></li>
+      <li>On the left: <strong>À gauche</strong></li>
+      <li>Straight ahead: <strong>Tout droit</strong></li>
+      <li>At the corner: <strong>Au coin</strong></li>
+      <li>One, two, three, four, blocks away: <strong>Un(deux/trois/quatre) pâté(s) de maisons</strong></li>
     </ul>
   </section>
 </body>
